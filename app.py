@@ -164,7 +164,8 @@ def build_model(df):
             "DecisionTreeRegressor",
         ],
         index=None,
-        on_change=change(st.session_state.__getstate__)
+        on_change=change(st.session_state.__getstate__),
+        key='selection'
             # if model1 is not None
             # else print("Debug")
     )
